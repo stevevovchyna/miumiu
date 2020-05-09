@@ -112,6 +112,7 @@
 		10ADE9F2245F26A000BCF797 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				10BEA7CA244B182A00AD07EE /* Loader */,
 				10ADE9F3245F26AF00BCF797 /* Utilities.swift */,
 				105ADF3D2466C50000DB8C95 /* NavigationItem + Item.swift */,
 				105ADF3F2466C6E200DB8C95 /* UIViewController + NavigationItems.swift */,
@@ -155,7 +156,6 @@
 			children = (
 				10BEA7E7244B2F4600AD07EE /* BreedCard */,
 				10BEA7D2244B198700AD07EE /* BreedsList */,
-				10BEA7CA244B182A00AD07EE /* Loader */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
