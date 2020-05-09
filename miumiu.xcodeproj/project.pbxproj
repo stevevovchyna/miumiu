@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105ADF3B2466BD8B00DB8C95 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ADF3A2466BD8B00DB8C95 /* NetworkingManager.swift */; };
+		1063013B2456A1B700A70DED /* BreedPerksCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063013A2456A1B700A70DED /* BreedPerksCollectionViewModel.swift */; };
+		1063013F2456A63700A70DED /* PerksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063013D2456A63700A70DED /* PerksCollectionViewCell.swift */; };
+		106301402456A63700A70DED /* PerksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1063013E2456A63700A70DED /* PerksCollectionViewCell.xib */; };
+		106A89962454A33B000879CA /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A89942454A33B000879CA /* PropertyTableViewCell.swift */; };
+		106A89972454A33B000879CA /* PropertyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106A89952454A33B000879CA /* PropertyTableViewCell.xib */; };
+		106A89992454A683000879CA /* BreedParametersTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A89982454A683000879CA /* BreedParametersTableViewModel.swift */; };
+		10ADE9F4245F26AF00BCF797 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ADE9F3245F26AF00BCF797 /* Utilities.swift */; };
 		10BEA7B6244B17FA00AD07EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7B5244B17FA00AD07EE /* AppDelegate.swift */; };
 		10BEA7B8244B17FA00AD07EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7B7244B17FA00AD07EE /* SceneDelegate.swift */; };
-		10BEA7BA244B17FA00AD07EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7B9244B17FA00AD07EE /* ViewController.swift */; };
-		10BEA7BD244B17FA00AD07EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BEA7BB244B17FA00AD07EE /* Main.storyboard */; };
 		10BEA7BF244B17FC00AD07EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BEA7BE244B17FC00AD07EE /* Assets.xcassets */; };
 		10BEA7C2244B17FC00AD07EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BEA7C0244B17FC00AD07EE /* LaunchScreen.storyboard */; };
+		10BEA7D7244B19C900AD07EE /* BreedsListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BEA7D6244B19C900AD07EE /* BreedsListView.storyboard */; };
+		10BEA7D9244B19DA00AD07EE /* BreedsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7D8244B19DA00AD07EE /* BreedsListViewController.swift */; };
+		10BEA7DB244B19EC00AD07EE /* BreedsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7DA244B19EC00AD07EE /* BreedsListModel.swift */; };
+		10BEA7DF244B1D3800AD07EE /* BreedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7DD244B1D3700AD07EE /* BreedTableViewCell.swift */; };
+		10BEA7E0244B1D3800AD07EE /* BreedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BEA7DE244B1D3700AD07EE /* BreedTableViewCell.xib */; };
+		10BEA7E4244B230000AD07EE /* BreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7E3244B230000AD07EE /* BreedModel.swift */; };
+		10BEA7E6244B2D0C00AD07EE /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7E5244B2D0C00AD07EE /* LoaderView.swift */; };
+		10BEA7EB244B2F7600AD07EE /* BreedCardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BEA7EA244B2F7600AD07EE /* BreedCardView.storyboard */; };
+		10BEA7ED244B2F9700AD07EE /* BreedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7EC244B2F9700AD07EE /* BreedCardViewController.swift */; };
+		10BEA7F2244B48B300AD07EE /* BreedImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA7F1244B48B300AD07EE /* BreedImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		105ADF3A2466BD8B00DB8C95 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		1063013A2456A1B700A70DED /* BreedPerksCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedPerksCollectionViewModel.swift; sourceTree = "<group>"; };
+		1063013D2456A63700A70DED /* PerksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerksCollectionViewCell.swift; sourceTree = "<group>"; };
+		1063013E2456A63700A70DED /* PerksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerksCollectionViewCell.xib; sourceTree = "<group>"; };
+		106A89942454A33B000879CA /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		106A89952454A33B000879CA /* PropertyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyTableViewCell.xib; sourceTree = "<group>"; };
+		106A89982454A683000879CA /* BreedParametersTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedParametersTableViewModel.swift; sourceTree = "<group>"; };
+		10ADE9F3245F26AF00BCF797 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		10BEA7B2244B17FA00AD07EE /* miumiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miumiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BEA7B5244B17FA00AD07EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10BEA7B7244B17FA00AD07EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10BEA7B9244B17FA00AD07EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		10BEA7BC244B17FA00AD07EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10BEA7BE244B17FC00AD07EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BEA7C1244B17FC00AD07EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BEA7C3244B17FC00AD07EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BEA7D6244B19C900AD07EE /* BreedsListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BreedsListView.storyboard; sourceTree = "<group>"; };
+		10BEA7D8244B19DA00AD07EE /* BreedsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewController.swift; sourceTree = "<group>"; };
+		10BEA7DA244B19EC00AD07EE /* BreedsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListModel.swift; sourceTree = "<group>"; };
+		10BEA7DD244B1D3700AD07EE /* BreedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedTableViewCell.swift; sourceTree = "<group>"; };
+		10BEA7DE244B1D3700AD07EE /* BreedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedTableViewCell.xib; sourceTree = "<group>"; };
+		10BEA7E3244B230000AD07EE /* BreedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedModel.swift; sourceTree = "<group>"; };
+		10BEA7E5244B2D0C00AD07EE /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		10BEA7EA244B2F7600AD07EE /* BreedCardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BreedCardView.storyboard; sourceTree = "<group>"; };
+		10BEA7EC244B2F9700AD07EE /* BreedCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCardViewController.swift; sourceTree = "<group>"; };
+		10BEA7F1244B48B300AD07EE /* BreedImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +69,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105ADF392466BD7400DB8C95 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				105ADF3C2466BE8800DB8C95 /* DecodableModels */,
+				105ADF3A2466BD8B00DB8C95 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		105ADF3C2466BE8800DB8C95 /* DecodableModels */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7E3244B230000AD07EE /* BreedModel.swift */,
+				10BEA7F1244B48B300AD07EE /* BreedImageModel.swift */,
+			);
+			path = DecodableModels;
+			sourceTree = "<group>";
+		};
+		1063013C2456A61200A70DED /* PerksCell */ = {
+			isa = PBXGroup;
+			children = (
+				1063013D2456A63700A70DED /* PerksCollectionViewCell.swift */,
+				1063013E2456A63700A70DED /* PerksCollectionViewCell.xib */,
+			);
+			path = PerksCell;
+			sourceTree = "<group>";
+		};
+		106A89932454A30D000879CA /* ParametersCell */ = {
+			isa = PBXGroup;
+			children = (
+				106A89942454A33B000879CA /* PropertyTableViewCell.swift */,
+				106A89952454A33B000879CA /* PropertyTableViewCell.xib */,
+			);
+			path = ParametersCell;
+			sourceTree = "<group>";
+		};
+		10ADE9F2245F26A000BCF797 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				10ADE9F3245F26AF00BCF797 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		10BEA7A9244B17FA00AD07EE = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +132,115 @@
 		10BEA7B4244B17FA00AD07EE /* miumiu */ = {
 			isa = PBXGroup;
 			children = (
+				105ADF392466BD7400DB8C95 /* Networking */,
+				10ADE9F2245F26A000BCF797 /* Utilities */,
+				10BEA7C9244B181D00AD07EE /* Screens */,
 				10BEA7B5244B17FA00AD07EE /* AppDelegate.swift */,
 				10BEA7B7244B17FA00AD07EE /* SceneDelegate.swift */,
-				10BEA7B9244B17FA00AD07EE /* ViewController.swift */,
-				10BEA7BB244B17FA00AD07EE /* Main.storyboard */,
 				10BEA7BE244B17FC00AD07EE /* Assets.xcassets */,
 				10BEA7C0244B17FC00AD07EE /* LaunchScreen.storyboard */,
 				10BEA7C3244B17FC00AD07EE /* Info.plist */,
 			);
 			path = miumiu;
+			sourceTree = "<group>";
+		};
+		10BEA7C9244B181D00AD07EE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7E7244B2F4600AD07EE /* BreedCard */,
+				10BEA7D2244B198700AD07EE /* BreedsList */,
+				10BEA7CA244B182A00AD07EE /* Loader */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		10BEA7CA244B182A00AD07EE /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7E5244B2D0C00AD07EE /* LoaderView.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		10BEA7D2244B198700AD07EE /* BreedsList */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7D3244B199F00AD07EE /* Model */,
+				10BEA7D4244B19A700AD07EE /* View */,
+				10BEA7D5244B19AD00AD07EE /* Controller */,
+			);
+			path = BreedsList;
+			sourceTree = "<group>";
+		};
+		10BEA7D3244B199F00AD07EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7DA244B19EC00AD07EE /* BreedsListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10BEA7D4244B19A700AD07EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7DC244B1D1A00AD07EE /* BreedCell */,
+				10BEA7D6244B19C900AD07EE /* BreedsListView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10BEA7D5244B19AD00AD07EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7D8244B19DA00AD07EE /* BreedsListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		10BEA7DC244B1D1A00AD07EE /* BreedCell */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7DD244B1D3700AD07EE /* BreedTableViewCell.swift */,
+				10BEA7DE244B1D3700AD07EE /* BreedTableViewCell.xib */,
+			);
+			path = BreedCell;
+			sourceTree = "<group>";
+		};
+		10BEA7E7244B2F4600AD07EE /* BreedCard */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7EE244B469100AD07EE /* Model */,
+				10BEA7E9244B2F6100AD07EE /* View */,
+				10BEA7E8244B2F5200AD07EE /* Controller */,
+			);
+			path = BreedCard;
+			sourceTree = "<group>";
+		};
+		10BEA7E8244B2F5200AD07EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				10BEA7EC244B2F9700AD07EE /* BreedCardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		10BEA7E9244B2F6100AD07EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1063013C2456A61200A70DED /* PerksCell */,
+				106A89932454A30D000879CA /* ParametersCell */,
+				10BEA7EA244B2F7600AD07EE /* BreedCardView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10BEA7EE244B469100AD07EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				106A89982454A683000879CA /* BreedParametersTableViewModel.swift */,
+				1063013A2456A1B700A70DED /* BreedPerksCollectionViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +301,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				106A89972454A33B000879CA /* PropertyTableViewCell.xib in Resources */,
+				10BEA7EB244B2F7600AD07EE /* BreedCardView.storyboard in Resources */,
+				10BEA7D7244B19C900AD07EE /* BreedsListView.storyboard in Resources */,
+				106301402456A63700A70DED /* PerksCollectionViewCell.xib in Resources */,
+				10BEA7E0244B1D3800AD07EE /* BreedTableViewCell.xib in Resources */,
 				10BEA7C2244B17FC00AD07EE /* LaunchScreen.storyboard in Resources */,
 				10BEA7BF244B17FC00AD07EE /* Assets.xcassets in Resources */,
-				10BEA7BD244B17FA00AD07EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10BEA7BA244B17FA00AD07EE /* ViewController.swift in Sources */,
+				105ADF3B2466BD8B00DB8C95 /* NetworkingManager.swift in Sources */,
+				10BEA7DF244B1D3800AD07EE /* BreedTableViewCell.swift in Sources */,
+				106A89962454A33B000879CA /* PropertyTableViewCell.swift in Sources */,
+				10BEA7DB244B19EC00AD07EE /* BreedsListModel.swift in Sources */,
+				1063013B2456A1B700A70DED /* BreedPerksCollectionViewModel.swift in Sources */,
+				10ADE9F4245F26AF00BCF797 /* Utilities.swift in Sources */,
+				10BEA7D9244B19DA00AD07EE /* BreedsListViewController.swift in Sources */,
+				10BEA7ED244B2F9700AD07EE /* BreedCardViewController.swift in Sources */,
 				10BEA7B6244B17FA00AD07EE /* AppDelegate.swift in Sources */,
+				10BEA7E6244B2D0C00AD07EE /* LoaderView.swift in Sources */,
+				10BEA7F2244B48B300AD07EE /* BreedImageModel.swift in Sources */,
+				106A89992454A683000879CA /* BreedParametersTableViewModel.swift in Sources */,
+				10BEA7E4244B230000AD07EE /* BreedModel.swift in Sources */,
+				1063013F2456A63700A70DED /* PerksCollectionViewCell.swift in Sources */,
 				10BEA7B8244B17FA00AD07EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +339,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		10BEA7BB244B17FA00AD07EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10BEA7BC244B17FA00AD07EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		10BEA7C0244B17FC00AD07EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
