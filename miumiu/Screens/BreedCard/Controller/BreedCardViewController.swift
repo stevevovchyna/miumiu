@@ -72,14 +72,22 @@ class BreedCardViewController: UIViewController {
     private func setupTableData() {
         let parametersArray = self.formParametersArray(with: self.breedData)
         self.tableViewModel = BreedParametersTableViewModel(properties: parametersArray)
-        self.tableView.register(UINib(nibName: "PropertyTableViewCell", bundle: nil), forCellReuseIdentifier: "propertyCell")
+        self.tableView.register(
+            UINib(
+                nibName: "PropertyTableViewCell",
+                bundle: nil),
+            forCellReuseIdentifier: "propertyCell")
         self.tableView.delegate = self.tableViewModel
         self.tableView.dataSource = self.tableViewModel
     }
     
     private func setupCollectionData() {
         self.collectionViewModel = BreedPerksCollectionViewModel(data: self.breedData)
-        self.collectionView.register(UINib(nibName: "PerksCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "perkCell")
+        self.collectionView.register(
+            UINib(
+                nibName: "PerksCollectionViewCell",
+                bundle: nil),
+            forCellWithReuseIdentifier: "perkCell")
         self.collectionView.delegate = self.collectionViewModel
         self.collectionView.dataSource = self.collectionViewModel
         if self.collectionViewModel?.perksArray.isEmpty ?? true {
@@ -122,18 +130,13 @@ class BreedCardViewController: UIViewController {
 }
 
 extension BreedCardViewController {
-    private func presentAlert() {
-        let alert = UIAlertController(title: "Error", message: "Failed to follow the link", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(okAction)
-        self.present(alert, animated: true, completion: nil)
-    }
-    
     private func goToURL(url: String?) {
         if let urlDestination = URL.init(string: url ?? "") {
             UIApplication.shared.open(urlDestination)
         } else {
-            self.presentAlert()
+            presentErrorAlertIn(
+                self,
+                with: "Failed to open the link")
         }
     }
 }

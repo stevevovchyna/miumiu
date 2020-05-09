@@ -21,7 +21,10 @@ class BreedListTableViewModel: NSObject, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "breedCell", for: indexPath) as! BreedTableViewCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "breedCell",
+            for: indexPath)
+            as! BreedTableViewCell
         let data = breedsList[indexPath.row]
         cell.name.text = data.name
         cell.age.text = "\(data.life_span ?? "Couple") years "

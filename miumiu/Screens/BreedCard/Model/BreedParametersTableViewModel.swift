@@ -21,7 +21,10 @@ class BreedParametersTableViewModel: NSObject, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "propertyCell", for: indexPath) as! PropertyTableViewCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "propertyCell",
+            for: indexPath)
+            as! PropertyTableViewCell
         cell.parameterName.text = properties[indexPath.row].1
         let level = properties[indexPath.row].0 ?? 0
         for i in (level + 1)...6 {

@@ -49,13 +49,20 @@ class BreedPerksCollectionViewModel: NSObject, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "perkCell", for: indexPath) as! PerksCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "perkCell",
+            for: indexPath)
+            as! PerksCollectionViewCell
         cell.perkImage.image = UIImage(named: self.perksArray[indexPath.row].0)
         cell.perkName.text = self.perksArray[indexPath.row].0
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0)
     }
 }

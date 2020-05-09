@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		105ADF3B2466BD8B00DB8C95 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ADF3A2466BD8B00DB8C95 /* NetworkingManager.swift */; };
+		105ADF3E2466C50000DB8C95 /* NavigationItem + Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ADF3D2466C50000DB8C95 /* NavigationItem + Item.swift */; };
+		105ADF402466C6E200DB8C95 /* UIViewController + NavigationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ADF3F2466C6E200DB8C95 /* UIViewController + NavigationItems.swift */; };
 		1063013B2456A1B700A70DED /* BreedPerksCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063013A2456A1B700A70DED /* BreedPerksCollectionViewModel.swift */; };
 		1063013F2456A63700A70DED /* PerksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063013D2456A63700A70DED /* PerksCollectionViewCell.swift */; };
 		106301402456A63700A70DED /* PerksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1063013E2456A63700A70DED /* PerksCollectionViewCell.xib */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		105ADF3A2466BD8B00DB8C95 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		105ADF3D2466C50000DB8C95 /* NavigationItem + Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem + Item.swift"; sourceTree = "<group>"; };
+		105ADF3F2466C6E200DB8C95 /* UIViewController + NavigationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + NavigationItems.swift"; sourceTree = "<group>"; };
 		1063013A2456A1B700A70DED /* BreedPerksCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedPerksCollectionViewModel.swift; sourceTree = "<group>"; };
 		1063013D2456A63700A70DED /* PerksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerksCollectionViewCell.swift; sourceTree = "<group>"; };
 		1063013E2456A63700A70DED /* PerksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerksCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				10ADE9F3245F26AF00BCF797 /* Utilities.swift */,
+				105ADF3D2466C50000DB8C95 /* NavigationItem + Item.swift */,
+				105ADF3F2466C6E200DB8C95 /* UIViewController + NavigationItems.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				105ADF3B2466BD8B00DB8C95 /* NetworkingManager.swift in Sources */,
 				10BEA7DF244B1D3800AD07EE /* BreedTableViewCell.swift in Sources */,
 				106A89962454A33B000879CA /* PropertyTableViewCell.swift in Sources */,
+				105ADF402466C6E200DB8C95 /* UIViewController + NavigationItems.swift in Sources */,
 				10BEA7DB244B19EC00AD07EE /* BreedsListModel.swift in Sources */,
 				1063013B2456A1B700A70DED /* BreedPerksCollectionViewModel.swift in Sources */,
 				10ADE9F4245F26AF00BCF797 /* Utilities.swift in Sources */,
@@ -333,6 +340,7 @@
 				10BEA7E4244B230000AD07EE /* BreedModel.swift in Sources */,
 				1063013F2456A63700A70DED /* PerksCollectionViewCell.swift in Sources */,
 				10BEA7B8244B17FA00AD07EE /* SceneDelegate.swift in Sources */,
+				105ADF3E2466C50000DB8C95 /* NavigationItem + Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,11 +20,16 @@ class BreedsListViewController: UIViewController, BreedCardDelegate {
     var tableDataModel: BreedListTableViewModel?
     let loaderView = LoaderView()
     let networking = NetworkingManager.shared
+    let rightBarButton = UINavigationItem.setTheButton(with: #imageLiteral(resourceName: "reload"), title: "", attribute: .forceRightToLeft)
     
     private func setupDataModel() {
         DispatchQueue.main.async {
             self.tableDataModel = BreedListTableViewModel(breedsList: self.breedsList)
-            self.tableView.register(UINib(nibName: "BreedTableViewCell", bundle: nil), forCellReuseIdentifier: "breedCell")
+            self.tableView.register(
+                UINib(
+                    nibName: "BreedTableViewCell",
+                    bundle: nil),
+                forCellReuseIdentifier: "breedCell")
             self.tableView.delegate = self.tableDataModel
             self.tableView.dataSource = self.tableDataModel
             self.tableDataModel?.delegate = self
@@ -33,7 +38,9 @@ class BreedsListViewController: UIViewController, BreedCardDelegate {
     }
     
     private func setBackgroundImage() {
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "котик") ?? UIImage())
+        self.view.backgroundColor = UIColor(
+            patternImage: UIImage(
+                named: "catBackground") ?? UIImage())
     }
 
     override func viewDidLoad() {
@@ -55,22 +62,45 @@ class BreedsListViewController: UIViewController, BreedCardDelegate {
         navigationController?.navigationBar.isHidden = false
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    private func setupReloadButton() {
+        addRightButtonToNavigationBar(
+            with: setItemForNavigationBar(
+                button: rightBarButton))
+        rightBarButton.isHidden = true
+        rightBarButton.addTarget(
+            self,
+            action: #selector(reloadData),
+            for: .touchUpInside)
+    }
+    
+    @objc func reloadData() {
         setupLoaderView()
         setupNavigationBar()
+        setupReloadButton()
         self.networking.getBreedsList { result in
             switch result {
             case .success(let breeds):
+                self.rightBarButton.isHidden = true
                 self.breedsList = breeds
                 self.setupDataModel()
                 self.loaderView.stopAnimation()
-            case .failure: print("oshibka")
+            case .failure:
+                presentErrorAlertIn(self, with: "Failed to get breed info :(") { _ in
+                    self.loaderView.stopAnimation()
+                    self.rightBarButton.isHidden = false
+                }
             }
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.reloadData()
+    }
+    
     func openBreedCard(breed: Breed) {
-        let vc = UIStoryboard(name: "BreedCardView", bundle: nil).instantiateViewController(withIdentifier: "BreedCard") as! BreedCardViewController
+        let vc = UIStoryboard(name: "BreedCardView", bundle: nil)
+            .instantiateViewController(withIdentifier: "BreedCard")
+            as! BreedCardViewController
         vc.breedData = breed
         guard let breedID = breed.id else { return }
         self.setupLoaderView()
@@ -85,14 +115,18 @@ class BreedsListViewController: UIViewController, BreedCardDelegate {
                             vc.catImageHolder = image
                             self.navigationController?.pushViewController(vc, animated: true)
                         }
-                    case .failure: print("image not loaded")
+                    case .failure:
+                        presentErrorAlertIn(
+                            self,
+                            with: "Failed to download cat image :(")
                     }
                 }
             case .failure:
                 self.loaderView.stopAnimation()
-                print("no image")
+                presentErrorAlertIn(
+                    self,
+                    with: "Failed to download cat image :(")
             }
         }
-        
     }
 }
